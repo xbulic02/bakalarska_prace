@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="173" xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.0.1" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-US; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<styles>
+<s type="P" name="Normal" basedon="" followedby="Current Settings" props="font-family:Liberation Serif; margin-top:0pt; font-variant:normal; margin-left:0pt; text-indent:0in; widows:2; font-style:normal; font-weight:normal; text-decoration:none; color:000000; line-height:1.0; text-align:left; margin-bottom:0pt; text-position:normal; margin-right:0pt; bgcolor:transparent; font-size:12pt; font-stretch:normal"/>
+</styles>
+<pagesize pagetype="A4" orientation="portrait" width="210.000000" height="297.000000" units="mm" page-scale="1.000000"/>
+<section xid="1">
+<p style="Normal" xid="2" props="text-align:left; dom-dir:ltr">if COND_NANOMSG</p>
+<p style="Normal" xid="3" props="text-align:left; dom-dir:ltr">MAYBE_TESTS = tests</p>
+<p style="Normal" xid="4" props="text-align:left; dom-dir:ltr">endif</p>
+<p style="Normal" xid="5"><c></c></p>
+<p style="Normal" xid="6" props="text-align:left; dom-dir:ltr">if COND_PI</p>
+<p style="Normal" xid="7" props="text-align:left; dom-dir:ltr">AM_CPPFLAGS += \</p>
+<p style="Normal" xid="8" props="text-align:left; dom-dir:ltr">-DWITH_PI \</p>
+<p style="Normal" xid="9" props="text-align:left; dom-dir:ltr">-I$(top_srcdir)/PI</p>
+<p style="Normal" xid="10" props="text-align:left; dom-dir:ltr">PI_LIB = $(top_builddir)/PI/libbmpi.la</p>
+<p style="Normal" xid="11" props="text-align:left; dom-dir:ltr">else</p>
+<p style="Normal" xid="12" props="text-align:left; dom-dir:ltr">PI_LIB =</p>
+<p style="Normal" xid="13" props="text-align:left; dom-dir:ltr">endif</p>
+<p style="Normal" xid="14"><c></c></p>
+<p style="Normal" xid="15" props="text-align:left; dom-dir:ltr">SUBDIRS = . $(MAYBE_TESTS)</p>
+<p style="Normal" xid="16"><c></c></p>
+<p style="Normal" xid="17" props="text-align:left; dom-dir:ltr">THRIFT_IDL = $(srcdir)/thrift/simple_switch.thrift</p>
+<p style="Normal" xid="18"><c></c></p>
+<p style="Normal" xid="19" props="text-align:left; dom-dir:ltr">noinst_LTLIBRARIES = libsimpleswitch.la</p>
+<p style="Normal" xid="20" props="text-align:left; dom-dir:ltr">lib_LTLIBRARIES = libsimpleswitch_runner.la</p>
+<p style="Normal" xid="21"><c></c></p>
+<p style="Normal" xid="22" props="text-align:left; dom-dir:ltr">libsimpleswitch_la_SOURCES = \</p>
+<p style="Normal" xid="23" props="text-align:left; dom-dir:ltr">simple_sw  itch.cpp \</p>
+<p style="Normal" xid="24" props="text-align:left; dom-dir:ltr">simple_switch.h \</p>
+<p style="Normal" xid="25" props="text-align:left; dom-dir:ltr">primitives.cpp \</p>
+<p style="Normal" xid="26" props="text-align:left; dom-dir:ltr">externy.cpp \</p>
+<p style="Normal" xid="27" props="text-align:left; dom-dir:ltr">externy.h \</p>
+<p style="Normal" xid="28" props="text-align:left; dom-dir:ltr">extern1.cpp \</p>
+<p style="Normal" xid="29" props="text-align:left; dom-dir:ltr">extern1.h \</p>
+<p style="Normal" xid="30" props="text-align:left; dom-dir:ltr">extern2.cpp \</p>
+<p style="Normal" xid="31" props="text-align:left; dom-dir:ltr">extern2.h</p>
+<p style="Normal" xid="32" props="text-align:left; dom-dir:ltr"># zde pridat pridane soubory ##########################################################</p>
+<p style="Normal" xid="33"><c></c></p>
+<p style="Normal" xid="34" props="text-align:left; dom-dir:ltr">libsimpleswitch_runner_la_SOURCES = \</p>
+<p style="Normal" xid="35" props="text-align:left; dom-dir:ltr">runner.cpp</p>
+<p style="Normal" xid="36"><c></c></p>
+<p style="Normal" xid="37" props="text-align:left; dom-dir:ltr">nobase_include_HEADERS = bm/simple_switch/runner.h</p>
+<p style="Normal" xid="38"><c></c></p>
+<p style="Normal" xid="39" props="text-align:left; dom-dir:ltr">libsimpleswitch_la_LIBADD = \</p>
+<p style="Normal" xid="40" props="text-align:left; dom-dir:ltr">$(top_builddir)/src/bm_sim/libbmsim.la \</p>
+<p style="Normal" xid="41" props="text-align:left; dom-dir:ltr">$(top_builddir)/src/bf_lpm_trie/libbflpmtrie.la \</p>
+<p style="Normal" xid="42" props="text-align:left; dom-dir:ltr">$(top_builddir)/src/BMI/libbmi.la \</p>
+<p style="Normal" xid="43" props="text-align:left; dom-dir:ltr">$(top_builddir)/third_party/jsoncpp/libjson.la \</p>
+<p style="Normal" xid="44" props="text-align:left; dom-dir:ltr">-lboost_system $(THRIFT_LIB) -lboost_program_options -lboost_filesystem</p>
+<p style="Normal" xid="45"><c></c></p>
+<p style="Normal" xid="46" props="text-align:left; dom-dir:ltr">libsimpleswitch_runner_la_LIBADD = \</p>
+<p style="Normal" xid="47" props="text-align:left; dom-dir:ltr">$(PI_LIB) \</p>
+<p style="Normal" xid="48" props="text-align:left; dom-dir:ltr">libsimpleswitch.la</p>
+<p style="Normal" xid="49"><c></c></p>
+<p style="Normal" xid="50" props="text-align:left; dom-dir:ltr">if COND_THRIFT</p>
+<p style="Normal" xid="51"><c></c></p>
+<p style="Normal" xid="52" props="text-align:left; dom-dir:ltr">simple_switch_thrift_py_files = \</p>
+<p style="Normal" xid="53" props="text-align:left; dom-dir:ltr">gen-py/sswitch_runtime/constants.py \</p>
+<p style="Normal" xid="54" props="text-align:left; dom-dir:ltr">gen-py/sswitch_runtime/__init__.py \</p>
+<p style="Normal" xid="55" props="text-align:left; dom-dir:ltr">gen-py/sswitch_runtime/SimpleSwitch.py \</p>
+<p style="Normal" xid="56" props="text-align:left; dom-dir:ltr">gen-py/sswitch_runtime/ttypes.py</p>
+<p style="Normal" xid="57" props="text-align:left; dom-dir:ltr">simple_switch_thrift_files = \</p>
+<p style="Normal" xid="58" props="text-align:left; dom-dir:ltr">gen-cpp/bm/simple_switch_constants.cpp \</p>
+<p style="Normal" xid="59" props="text-align:left; dom-dir:ltr">gen-cpp/bm/simple_switch_constants.h \</p>
+<p style="Normal" xid="60" props="text-align:left; dom-dir:ltr">gen-cpp/bm/SimpleSwitch.cpp \</p>
+<p style="Normal" xid="61" props="text-align:left; dom-dir:ltr">gen-cpp/bm/SimpleSwitch.h \</p>
+<p style="Normal" xid="62" props="text-align:left; dom-dir:ltr">gen-cpp/bm/simple_switch_types.cpp \</p>
+<p style="Normal" xid="63" props="text-align:left; dom-dir:ltr">gen-cpp/bm/simple_switch_types.h</p>
+<p style="Normal" xid="64"><c></c></p>
+<p style="Normal" xid="65" props="text-align:left; dom-dir:ltr">BUILT_SOURCES = $(simple_switch_thrift_files) $(simple_switch_thrift_py_files)</p>
+<p style="Normal" xid="66"><c></c></p>
+<p style="Normal" xid="67" props="text-align:left; dom-dir:ltr">sswitchpydir = $(pythondir)/sswitch_runtime</p>
+<p style="Normal" xid="68" props="text-align:left; dom-dir:ltr">nodist_sswitchpy_PYTHON = $(simple_switch_thrift_py_files)</p>
+<p style="Normal" xid="69"><c></c></p>
+<p style="Normal" xid="70" props="text-align:left; dom-dir:ltr">python_PYTHON = sswitch_CLI.py</p>
+<p style="Normal" xid="71"><c></c></p>
+<p style="Normal" xid="72" props="text-align:left; dom-dir:ltr"># See</p>
+<p style="Normal" xid="73" props="text-align:left; dom-dir:ltr"># http://www.gnu.org/software/autoconf/manual/autoconf-2.69/html_node/Installation-Directory-Variables.html</p>
+<p style="Normal" xid="74" props="text-align:left; dom-dir:ltr">edit = sed \</p>
+<p style="Normal" xid="75" props="text-align:left; dom-dir:ltr">	-e 's|@pythondir[@]|$(pythondir)|g'</p>
+<p style="Normal" xid="76"><c></c></p>
+<p style="Normal" xid="77" props="text-align:left; dom-dir:ltr">simple_switch_CLI: Makefile</p>
+<p style="Normal" xid="78" props="text-align:left; dom-dir:ltr">	rm -f $@ $@.tmp</p>
+<p style="Normal" xid="79" props="text-align:left; dom-dir:ltr">	$(edit) $(srcdir)/$@.in &gt;$@.tmp</p>
+<p style="Normal" xid="80" props="text-align:left; dom-dir:ltr">	chmod +x $@.tmp</p>
+<p style="Normal" xid="81" props="text-align:left; dom-dir:ltr">	chmod a-w $@.tmp</p>
+<p style="Normal" xid="82" props="text-align:left; dom-dir:ltr">	mv $@.tmp $@</p>
+<p style="Normal" xid="83"><c></c></p>
+<p style="Normal" xid="84" props="text-align:left; dom-dir:ltr">simple_switch_CLI: simple_switch_CLI.in</p>
+<p style="Normal" xid="85"><c></c></p>
+<p style="Normal" xid="86" props="text-align:left; dom-dir:ltr">EXTRA_DIST = \</p>
+<p style="Normal" xid="87" props="text-align:left; dom-dir:ltr">simple_switch_CLI.in \</p>
+<p style="Normal" xid="88" props="text-align:left; dom-dir:ltr">sswitch_CLI</p>
+<p style="Normal" xid="89"><c></c></p>
+<p style="Normal" xid="90" props="text-align:left; dom-dir:ltr">bin_SCRIPTS = \</p>
+<p style="Normal" xid="91" props="text-align:left; dom-dir:ltr">simple_switch_CLI</p>
+<p style="Normal" xid="92"><c></c></p>
+<p style="Normal" xid="93" props="text-align:left; dom-dir:ltr">AM_CPPFLAGS += \</p>
+<p style="Normal" xid="94" props="text-align:left; dom-dir:ltr">-I$(srcdir)/thrift/src/ \</p>
+<p style="Normal" xid="95" props="text-align:left; dom-dir:ltr">-I$(builddir)/gen-cpp</p>
+<p style="Normal" xid="96"><c></c></p>
+<p style="Normal" xid="97" props="text-align:left; dom-dir:ltr">libsimpleswitch_la_SOURCES += thrift/src/SimpleSwitch_server.cpp</p>
+<p style="Normal" xid="98"><c></c></p>
+<p style="Normal" xid="99" props="text-align:left; dom-dir:ltr">bin_PROGRAMS = simple_switch</p>
+<p style="Normal" xid="100"><c></c></p>
+<p style="Normal" xid="101" props="text-align:left; dom-dir:ltr">simple_switch_LDADD = \</p>
+<p style="Normal" xid="102" props="text-align:left; dom-dir:ltr">$(top_builddir)/src/bm_runtime/libbmruntime.la \</p>
+<p style="Normal" xid="103" props="text-align:left; dom-dir:ltr">$(top_builddir)/thrift_src/libruntimestubs.la \</p>
+<p style="Normal" xid="104" props="text-align:left; dom-dir:ltr">libsimpleswitch.la \</p>
+<p style="Normal" xid="105" props="text-align:left; dom-dir:ltr">libsimpleswitch_thrift.la</p>
+<p style="Normal" xid="106"><c></c></p>
+<p style="Normal" xid="107" props="text-align:left; dom-dir:ltr">simple_switch_SOURCES = main.cpp</p>
+<p style="Normal" xid="108" props="text-align:left; dom-dir:ltr">simple_switch_LDFLAGS =</p>
+<p style="Normal" xid="109" props="text-align:left; dom-dir:ltr">if ENABLE_MODULES</p>
+<p style="Normal" xid="110" props="text-align:left; dom-dir:ltr">simple_switch_LDFLAGS += -rdynamic</p>
+<p style="Normal" xid="111" props="text-align:left; dom-dir:ltr">endif</p>
+<p style="Normal" xid="112"><c></c></p>
+<p style="Normal" xid="113" props="text-align:left; dom-dir:ltr">lib_LTLIBRARIES += libsimpleswitch_thrift.la</p>
+<p style="Normal" xid="114"><c></c></p>
+<p style="Normal" xid="115" props="text-align:left; dom-dir:ltr">nodist_libsimpleswitch_thrift_la_SOURCES = \</p>
+<p style="Normal" xid="116" props="text-align:left; dom-dir:ltr">$(simple_switch_thrift_files)</p>
+<p style="Normal" xid="117"><c></c></p>
+<p style="Normal" xid="118" props="text-align:left; dom-dir:ltr"># See http://www.gnu.org/software/automake/manual/html_node/Multiple-Outputs.html</p>
+<p style="Normal" xid="119"><c></c></p>
+<p style="Normal" xid="120" props="text-align:left; dom-dir:ltr">EXTRA_DIST += $(THRIFT_IDL)</p>
+<p style="Normal" xid="121"><c></c></p>
+<p style="Normal" xid="122" props="text-align:left; dom-dir:ltr"># We copy the generated Python code to srcdir/ if we have permissions (i.e. not</p>
+<p style="Normal" xid="123" props="text-align:left; dom-dir:ltr"># for 'make distcheck'). This is to ensure we can run the CLI easily. Maybe I</p>
+<p style="Normal" xid="124" props="text-align:left; dom-dir:ltr"># will think of a better solution later.</p>
+<p style="Normal" xid="125" props="text-align:left; dom-dir:ltr">thrift_files.ts: $(THRIFT_IDL)</p>
+<p style="Normal" xid="126" props="text-align:left; dom-dir:ltr">	@rm -f thrift_files.tmp</p>
+<p style="Normal" xid="127" props="text-align:left; dom-dir:ltr">	@touch thrift_files.tmp</p>
+<p style="Normal" xid="128" props="text-align:left; dom-dir:ltr">	@mkdir -p $(builddir)/gen-cpp/bm</p>
+<p style="Normal" xid="129" props="text-align:left; dom-dir:ltr">	$(THRIFT) -out $(builddir)/gen-cpp/bm --gen cpp -r $(THRIFT_IDL)</p>
+<p style="Normal" xid="130" props="text-align:left; dom-dir:ltr">	$(THRIFT) -o $(builddir) --gen py -r $(THRIFT_IDL)</p>
+<p style="Normal" xid="131" props="text-align:left; dom-dir:ltr">	if mkdir $(srcdir)/sswitch_runtime.test 2&gt;/dev/null; then \</p>
+<p style="Normal" xid="132" props="text-align:left; dom-dir:ltr">	  rm -rf $(srcdir)/sswitch_runtime/; \</p>
+<p style="Normal" xid="133" props="text-align:left; dom-dir:ltr">	  cp -r $(builddir)/gen-py/sswitch_runtime/ $(srcdir)/; \</p>
+<p style="Normal" xid="134" props="text-align:left; dom-dir:ltr">	  rm -rf $(srcdir)/sswitch_runtime.test; else :; \</p>
+<p style="Normal" xid="135" props="text-align:left; dom-dir:ltr">        fi</p>
+<p style="Normal" xid="136" props="text-align:left; dom-dir:ltr">	@mv -f thrift_files.tmp $@</p>
+<p style="Normal" xid="137"><c></c></p>
+<p style="Normal" xid="138" props="text-align:left; dom-dir:ltr">$(BUILT_SOURCES): thrift_files.ts</p>
+<p style="Normal" xid="139" props="text-align:left; dom-dir:ltr">## Recover from the removal of $@</p>
+<p style="Normal" xid="140" props="text-align:left; dom-dir:ltr">	@if test -f $@; then :; else \</p>
+<p style="Normal" xid="141" props="text-align:left; dom-dir:ltr">	  trap 'rm -rf thrift_files.lock thrift_files.ts' 1 2 13 15; \</p>
+<p style="Normal" xid="142" props="text-align:left; dom-dir:ltr">## mkdir is a portable test-and-set</p>
+<p style="Normal" xid="143" props="text-align:left; dom-dir:ltr">	if mkdir thrift_files.lock 2&gt;/dev/null; then \</p>
+<p style="Normal" xid="144" props="text-align:left; dom-dir:ltr">## This code is being executed by the first process.</p>
+<p style="Normal" xid="145" props="text-align:left; dom-dir:ltr">	  rm -f thrift_files.ts; \</p>
+<p style="Normal" xid="146" props="text-align:left; dom-dir:ltr">	  $(MAKE) $(AM_MAKEFLAGS) thrift_files.ts; \</p>
+<p style="Normal" xid="147" props="text-align:left; dom-dir:ltr">	  result=$$?; rm -rf thrift_files.lock; exit $$result; \</p>
+<p style="Normal" xid="148" props="text-align:left; dom-dir:ltr">	else \</p>
+<p style="Normal" xid="149" props="text-align:left; dom-dir:ltr">## This code is being executed by the follower processes.</p>
+<p style="Normal" xid="150" props="text-align:left; dom-dir:ltr">## Wait until the first process is done.</p>
+<p style="Normal" xid="151" props="text-align:left; dom-dir:ltr">	  while test -d thrift_files.lock; do sleep 1; done; \</p>
+<p style="Normal" xid="152" props="text-align:left; dom-dir:ltr">## Succeed if and only if the first process succeeded.</p>
+<p style="Normal" xid="153" props="text-align:left; dom-dir:ltr">	    test -f thrift_files.ts; \</p>
+<p style="Normal" xid="154" props="text-align:left; dom-dir:ltr">	  fi; \</p>
+<p style="Normal" xid="155" props="text-align:left; dom-dir:ltr">	fi</p>
+<p style="Normal" xid="156"><c></c></p>
+<p style="Normal" xid="157" props="text-align:left; dom-dir:ltr">nodist_pkginclude_HEADERS = \</p>
+<p style="Normal" xid="158" props="text-align:left; dom-dir:ltr">gen-cpp/bm/simple_switch_constants.h \</p>
+<p style="Normal" xid="159" props="text-align:left; dom-dir:ltr">gen-cpp/bm/SimpleSwitch.h \</p>
+<p style="Normal" xid="160" props="text-align:left; dom-dir:ltr">gen-cpp/bm/simple_switch_types.h</p>
+<p style="Normal" xid="161"><c></c></p>
+<p style="Normal" xid="162" props="text-align:left; dom-dir:ltr">CLEANFILES = $(BUILT_SOURCES) \</p>
+<p style="Normal" xid="163" props="text-align:left; dom-dir:ltr">thrift_files.ts \</p>
+<p style="Normal" xid="164" props="text-align:left; dom-dir:ltr">gen-cpp/bm/SimpleSwitch_server.skeleton.cpp \</p>
+<p style="Normal" xid="165" props="text-align:left; dom-dir:ltr">$(bin_SCRIPTS)</p>
+<p style="Normal" xid="166"><c></c></p>
+<p style="Normal" xid="167" props="text-align:left; dom-dir:ltr"># I used to do a rm on gen-cpp, but it was removing a .deps directory, instead I</p>
+<p style="Normal" xid="168" props="text-align:left; dom-dir:ltr"># am adding the skeleton file to CLEANFILES</p>
+<p style="Normal" xid="169" props="text-align:left; dom-dir:ltr">clean-local:</p>
+<p style="Normal" xid="170" props="text-align:left; dom-dir:ltr">	rm -rf gen-py</p>
+<p style="Normal" xid="171"><c></c></p>
+<p style="Normal" xid="172" props="text-align:left; dom-dir:ltr">endif  # COND_THRIFT</p>
+<p style="Normal" xid="173"></p>
+</section>
+</abiword>
